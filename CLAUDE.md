@@ -11,3 +11,8 @@ This repository is currently empty (no source files, no README, no package manif
 - **Push after every code change.** Whenever you modify code in this repository, commit the change and push it to GitHub immediately afterward — do not batch multiple unrelated changes into a single push, and do not leave committed work unpushed.
 - Use clear, descriptive commit messages that explain the "why" behind the change.
 - Confirm with the user before force-pushing, rewriting history, or pushing to protected branches (e.g. `main`).
+
+## デプロイ情報
+
+- 本番URL：https://realestate-app.vercel.app
+- Supabaseプロジェクト名：realestate-app
