@@ -122,6 +122,82 @@ body {
   cursor: pointer;
 }
 
+.property-actions {
+  margin-bottom: 16px;
+}
+
+.property-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.empty-message {
+  color: #6b7280;
+}
+
+/* 物件の新規登録・編集フォーム */
+.property-form {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 400px;
+}
+
+.property-form h2 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.property-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.property-form input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.property-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.property-form-actions button[type='submit'] {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.property-form-actions button[type='button'] {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.property-form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .property-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -150,4 +226,19 @@ body {
   color: #6b7280;
   font-size: 0.9rem;
   margin: 4px 0 0;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.property-card-actions button {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 0.85rem;
 }
