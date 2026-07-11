@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hiragino Sans', 'Yu Gothic', system-ui, sans-serif;
+  background-color: #f5f6f8;
+  color: #1f2933;
+}
+
+/* ログイン・会員登録画面 */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-form h1 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.auth-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.auth-form input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.auth-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.auth-form button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.auth-switch {
+  text-align: center;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.info-message {
+  color: #2563eb;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.loading-message {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* 物件一覧画面 */
+.property-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.property-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-email {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.header-right button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ef4444;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.property-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+}
+
+.property-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.property-rent {
+  color: #2563eb;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.property-area {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+}
